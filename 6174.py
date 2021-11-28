@@ -12,6 +12,11 @@ while num != 6174:
     if num > 10000:
         t.sleep(0.2)
         print('<<<=== Wrong number! Try again ===>>>')
+        break
+    if num // 1111 == 0:
+        t.sleep(0.2)
+        print('<<<=== Wrong number! Try again ===>>>')
+        break
     else:
         yekan = num % 10
         dahgan = num // 10 % 10
